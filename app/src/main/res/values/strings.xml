@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Text Repeater || My App</string>
+
+
+    <string name="edit_hint">Input Text</string>
+
+
+    <string name="repeat">Number to Repeat</string>
+
+
+    <string name="button">Ok</string>
+
+    <string name="copy">Copy All</string>
+    <string name="clear">Clear All</string>
+    <string name="share_word">Share All</string>
+
+
+</resources>
