@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp">
 
 
    <EditText
@@ -26,40 +27,51 @@
        android:textAlignment="center"
        />
 
-   <Button
-       android:id="@+id/button"
-       android:layout_below="@id/repeat"
-       android:layout_width="wrap_content"
+   <LinearLayout
+       android:id="@+id/LinearLayout"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="@string/button"
-       android:layout_centerInParent="true"/>
+       android:layout_below="@+id/repeat"
+       android:gravity="center"
+       android:paddingTop="10dp"
+       >
 
-   <Button
-       android:id="@+id/copy"
-       android:layout_below="@+id/button"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/copy"
-       android:layout_centerInParent="true"
-       />
+      <Button
+          android:id="@+id/button"
+          android:layout_below="@id/repeat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/button"
 
-   <Button
-       android:id="@+id/clear"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/clear"
-       android:layout_centerInParent="true"
-       android:layout_below="@id/copy"
-       />
+          />
 
-   <Button
-       android:id="@+id/share_text"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_below="@id/clear"
-       android:layout_centerInParent="true"
-       android:text="@string/share_word"
-       />
+      <Button
+          android:id="@+id/copy"
+          android:layout_below="@+id/button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/copy"
+          />
+
+      <Button
+          android:id="@+id/clear"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/clear"
+          android:layout_below="@id/copy"
+          />
+
+      <Button
+          android:id="@+id/share_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/clear"
+          android:text="@string/share_word"
+          />
+
+
+   </LinearLayout>
+
 
 
    <EditText
@@ -68,7 +80,7 @@
        android:layout_height="match_parent"
        android:textSize="20sp"
        android:gravity="start"
-       android:layout_below="@id/copy"
+       android:layout_below="@id/LinearLayout"
        android:layout_alignParentStart="true"
        android:inputType="textMultiLine"/>
 

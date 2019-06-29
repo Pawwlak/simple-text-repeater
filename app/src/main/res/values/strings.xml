@@ -13,6 +13,7 @@
     <string name="copy">Copy All</string>
     <string name="clear">Clear All</string>
     <string name="share_word">Share All</string>
+    <string name="intro">Loading</string>
 
 
 </resources>
